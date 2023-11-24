@@ -461,7 +461,6 @@ void do_command(){
 
 // @title    help
 // @description   help指令的处理函数
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 void help(){
