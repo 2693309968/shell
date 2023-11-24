@@ -5,6 +5,9 @@
 编译示例
 
 ````shell
+sudo apt-get install libreadline-dev
+````
+````shell
 gcc myShell.c -o myShell -lreadline
 ````
 
