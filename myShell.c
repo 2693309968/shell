@@ -1,7 +1,5 @@
 // @Title  Myshell
 // @Description  Linux Shell 的简单实现
-// @Author  MGAronya（张健）
-// @Update  MGAronya（张健）  2022-12-5 0:33
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -84,7 +82,6 @@ void display_history_list();
 
 // @title    main
 // @description   程序入口
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   int
 int main(){
@@ -131,7 +128,6 @@ int main(){
 
 // @title    set_prompt
 // @description   打印出等待用户输入的信息
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    char *prompt	输入提数用户输入的原始信息
 // @return   void
 void set_prompt(char *prompt){
@@ -197,7 +193,6 @@ void set_prompt(char *prompt){
 
 // @title    analysis_command
 // @description   分析用户输入的指令
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 int analysis_command(){    
@@ -305,7 +300,6 @@ int analysis_command(){
 
 // @title    builtin_command
 // @description   内建指令的处理函数
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 void builtin_command(){
@@ -353,7 +347,6 @@ void builtin_command(){
 
 // @title    do_command
 // @description   其它指令的处理函数
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 void do_command(){
@@ -472,15 +465,7 @@ void do_command(){
 // @param    void
 // @return   void
 void help(){
-		printf(
-"  __  __    _____ \n"                                                  
-" |  \\/  |  / ____|     /\\                   \n"                        
-" | \\  / | | |  __     /  \\     _ __    ___    _ __    _   _    __ _ \n"
-" | |\\/| | | | |_ |   / /\\ \\   | '__|  / _ \\  | '_ \\  | | | |  / _` |\n"
-" | |  | | | |__| |  / ____ \\  | |    | (_) | | | | | | |_| | | (_| |\n"
-" |_|  |_|  \\_____| /_/    \\_\\ |_|     \\___/  |_| |_|  \\__, |  \\__,_|\n"
-"                                                       __/ |        \n"
-"                                                      |___/         \n\n\n\n\n");
+	printf("wellcome to use help file\n");
 //打开文件
 	FILE *pfile = fopen("./README.md", "rb");
 	if (pfile == NULL) {
@@ -515,7 +500,6 @@ void help(){
 
 // @title    initial
 // @description   初始化各种参数
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 void initial(){
@@ -532,7 +516,6 @@ void initial(){
 
 // @title    init_lastdir
 // @description   将当前工作目录的绝对路径复制到参数lastdir所指的内存空间中，以此初始化lastdir
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   int
 void init_lastdir(){
@@ -554,7 +537,6 @@ void history_setup(){
 
 // @title    history_finish
 // @description   添加历史记录
-// @auth      MGAronya（张健）       2022-12-5 12:15
 // @param    void
 // @return   void
 void history_finish(){
@@ -574,4 +556,3 @@ void display_history_list(){
 		}
 	}
 }
-
